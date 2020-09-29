@@ -14,6 +14,11 @@
 		91F8522A252366AC009E725B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91F85229252366AC009E725B /* Preview Assets.xcassets */; };
 		91F8522D252366AC009E725B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F8522B252366AC009E725B /* LaunchScreen.storyboard */; };
 		91F85235252369B2009E725B /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 91F85234252369B2009E725B /* Readme.md */; };
+		91F8523925236DFF009E725B /* FourBarLinkage.png in Resources */ = {isa = PBXBuildFile; fileRef = 91F8523825236DFF009E725B /* FourBarLinkage.png */; };
+		91F8523B25236F19009E725B /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 91F8523A25236F19009E725B /* test.jpg */; };
+		91F8523D25236FDB009E725B /* ARDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F8523C25236FDB009E725B /* ARDetailedView.swift */; };
+		91F8523F25237500009E725B /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F8523E25237500009E725B /* CameraController.swift */; };
+		91F85241252378C2009E725B /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F85240252378C2009E725B /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		91F8522C252366AC009E725B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91F8522E252366AC009E725B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91F85234252369B2009E725B /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		91F8523825236DFF009E725B /* FourBarLinkage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FourBarLinkage.png; sourceTree = "<group>"; };
+		91F8523A25236F19009E725B /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		91F8523C25236FDB009E725B /* ARDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARDetailedView.swift; sourceTree = "<group>"; };
+		91F8523E25237500009E725B /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		91F85240252378C2009E725B /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +69,16 @@
 			isa = PBXGroup;
 			children = (
 				91F85220252366AB009E725B /* AppDelegate.swift */,
+				91F8523E25237500009E725B /* CameraController.swift */,
+				91F85240252378C2009E725B /* CameraViewController.swift */,
 				91F85234252369B2009E725B /* Readme.md */,
 				91F85222252366AB009E725B /* SceneDelegate.swift */,
+				91F8523C25236FDB009E725B /* ARDetailedView.swift */,
 				91F85224252366AB009E725B /* ContentView.swift */,
 				91F85226252366AC009E725B /* Assets.xcassets */,
 				91F8522B252366AC009E725B /* LaunchScreen.storyboard */,
 				91F8522E252366AC009E725B /* Info.plist */,
+				91F8523725236DA3009E725B /* Resources */,
 				91F85228252366AC009E725B /* Preview Content */,
 			);
 			path = "NUS FYP ARTeachingAssistant";
@@ -76,6 +90,15 @@
 				91F85229252366AC009E725B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		91F8523725236DA3009E725B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				91F8523A25236F19009E725B /* test.jpg */,
+				91F8523825236DFF009E725B /* FourBarLinkage.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				91F8522D252366AC009E725B /* LaunchScreen.storyboard in Resources */,
+				91F8523B25236F19009E725B /* test.jpg in Resources */,
+				91F8523925236DFF009E725B /* FourBarLinkage.png in Resources */,
 				91F8522A252366AC009E725B /* Preview Assets.xcassets in Resources */,
 				91F85235252369B2009E725B /* Readme.md in Resources */,
 				91F85227252366AC009E725B /* Assets.xcassets in Resources */,
@@ -151,8 +176,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				91F85221252366AB009E725B /* AppDelegate.swift in Sources */,
+				91F8523D25236FDB009E725B /* ARDetailedView.swift in Sources */,
 				91F85223252366AB009E725B /* SceneDelegate.swift in Sources */,
 				91F85225252366AB009E725B /* ContentView.swift in Sources */,
+				91F8523F25237500009E725B /* CameraController.swift in Sources */,
+				91F85241252378C2009E725B /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
