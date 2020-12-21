@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nlH-U0-ij4">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scene View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ARSceneViewController" customModule="FYP2_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j0S-Xe-XxS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arscnView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="asE-yi-is4">
+                                <rect key="frame" x="8" y="64" width="308" height="31"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="n2C-fE-PoZ">
+                                <rect key="frame" x="8" y="104" width="308" height="31"/>
+                                <color key="thumbTintColor" systemColor="systemTealColor"/>
+                                <connections>
+                                    <action selector="changeVelocity:" destination="BYZ-38-t0r" eventType="valueChanged" id="LK9-gT-hkV"/>
+                                </connections>
+                            </slider>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Length" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JGb-Rb-buX">
+                                <rect key="frame" x="317" y="64" width="68" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Velocity" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2oO-lO-YJY">
+                                <rect key="frame" x="317" y="106" width="68" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="j0S-Xe-XxS" secondAttribute="trailing" id="270-bA-acD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n2C-fE-PoZ" secondAttribute="trailing" constant="100" id="IKX-lI-zct"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="asE-yi-is4" secondAttribute="trailing" constant="100" id="VNP-cI-e97"/>
+                            <constraint firstItem="n2C-fE-PoZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="VwV-os-0Y3"/>
+                            <constraint firstItem="asE-yi-is4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="WCC-8C-V6B"/>
+                            <constraint firstItem="j0S-Xe-XxS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gY1-1o-iqu"/>
+                            <constraint firstItem="asE-yi-is4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="lrr-YG-z5C"/>
+                            <constraint firstItem="j0S-Xe-XxS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="n83-Vf-x5Z"/>
+                            <constraint firstAttribute="bottom" secondItem="j0S-Xe-XxS" secondAttribute="bottom" id="pgS-Ln-NTy"/>
+                            <constraint firstItem="n2C-fE-PoZ" firstAttribute="top" secondItem="asE-yi-is4" secondAttribute="bottom" constant="10" id="x6k-Yr-vpV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Gju-Ek-BpK"/>
+                    <size key="freeformSize" width="414" height="896"/>
+                    <connections>
+                        <outlet property="arView" destination="j0S-Xe-XxS" id="OBX-T9-XTf"/>
+                        <outlet property="driveAngleVelocity" destination="n2C-fE-PoZ" id="ScL-XK-ccu"/>
+                        <outlet property="sliderBarLink1" destination="asE-yi-is4" id="bfu-Y7-hoj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="367" y="-86"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="m15-Ku-zeg">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="nlH-U0-ij4" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7a0-e8-Pqg">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Odx-PB-cam" kind="relationship" relationship="rootViewController" id="X9A-Ko-pMU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GBW-xd-RZI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1320" y="-85"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YJZ-et-BWd">
+            <objects>
+                <viewController id="Odx-PB-cam" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fgB-JS-cUW">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="rch-lL-vb1">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htI-Xo-FSc">
+                                <rect key="frame" x="30.666666666666657" y="74" width="367" height="254"/>
+                                <state key="normal" image="FourBarLinkage"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="KqK-In-mP6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKg-ON-AWj">
+                                <rect key="frame" x="42" y="473" width="356" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="crankSlider"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4sV-YM-9qP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="htI-Xo-FSc" firstAttribute="centerX" secondItem="fgB-JS-cUW" secondAttribute="centerX" id="SKR-uE-921"/>
+                            <constraint firstItem="rch-lL-vb1" firstAttribute="top" secondItem="fgB-JS-cUW" secondAttribute="top" id="Z0W-Tx-5ry"/>
+                            <constraint firstAttribute="trailing" secondItem="rch-lL-vb1" secondAttribute="trailing" id="ZE5-2H-3Ec"/>
+                            <constraint firstItem="htI-Xo-FSc" firstAttribute="top" secondItem="4sV-YM-9qP" secondAttribute="top" constant="30" id="etM-Nq-PFE"/>
+                            <constraint firstAttribute="bottom" secondItem="rch-lL-vb1" secondAttribute="bottom" id="oor-jl-iSS"/>
+                            <constraint firstItem="rch-lL-vb1" firstAttribute="leading" secondItem="fgB-JS-cUW" secondAttribute="leading" id="u8c-fA-icy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oeR-9F-8hZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U3Z-yp-jr7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-372.89719626168221" y="-85.529157667386613"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackgroundImage" width="375" height="667"/>
+        <image name="FourBarLinkage" width="367" height="254"/>
+        <image name="crankSlider" width="293" height="172"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
