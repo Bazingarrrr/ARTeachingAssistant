@@ -15,9 +15,9 @@ extension ARSceneViewController {
         
         
         sliderBarLink1.minimumValue = 4 * linkRadius
-        sliderBarLink1.maximumValue = 1
+        sliderBarLink1.maximumValue = 0.5
         sliderBarLink1.isContinuous = false
-        sliderBarLink1.setValue(100 * linkRadius, animated: true)
+        sliderBarLink1.setValue(10 * linkRadius, animated: true)
         
         
         driveAngleVelocity.minimumValue = 16

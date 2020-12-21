@@ -79,7 +79,7 @@ currentNode = sphereNode
 
 }
 
-func addLink2D(to sceneView:ARSCNView, of length:Float, lastLength:Float? = nil, with rotation:Float = 0) {
+func addLink2D(to sceneView:ARSCNView, of length:Float, lastLength:Float = 0, with rotation:Float = 0) {
     
     var translation = length
     
@@ -93,7 +93,7 @@ func addLink2D(to sceneView:ARSCNView, of length:Float, lastLength:Float? = nil,
     }
     else {
         
-        translation = Float(lastLength!/2)
+        translation = Float(lastLength/2)
         addSphere(to: sceneView, at: SCNVector3(0,translation,0), with: SCNVector4(0,0,1,rotation), eularAngle: nil)
     }
     

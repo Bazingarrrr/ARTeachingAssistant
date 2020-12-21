@@ -31,6 +31,8 @@ class ARSceneViewController: UIViewController {
     @IBOutlet weak var sliderBarLink1: UISlider!
     @IBOutlet weak var driveAngleVelocity: UISlider!
     
+    @IBOutlet weak var driverLength: UITextField!
+    @IBOutlet weak var driverVelocity: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +43,7 @@ class ARSceneViewController: UIViewController {
         GestureSetUp()
         determineTypeOfFourBar(fourBarLinkLength: fourBarLinkLength!)
         
-//        addFourBarLink(to: arView, ofLength: fourBarLinkLength!, with: fourBarInitialAngle!)
+        addFourBarLink(to: arView, ofLength: fourBarLinkLength!, with: fourBarInitialAngle!)
         addCrankSlider(driveAngle: pi/6)
         
     }
@@ -89,6 +91,7 @@ class ARSceneViewController: UIViewController {
     @IBAction func changeVelocity(_ sender: Any) {
         timer!.invalidate()
         timer = Timer.scheduledTimer(withTimeInterval: TimeInterval(1/self.driveAngleVelocity.value), repeats: true) { (Timer) in
+            self.driverVelocity.text = String( self.driveAngleVelocity.value )
             self.generateNewNode()
         }
     }

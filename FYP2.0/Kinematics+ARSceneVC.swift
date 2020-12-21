@@ -226,6 +226,7 @@ extension ARSceneViewController {
         var dtheta:Float = 0
         
         self.fourBarLinkLength = Array(repeating: sliderBarLink1.value, count: 4)
+        self.driverLength.text = String( sliderBarLink1.value )
         
         // 逆时针转 or 顺时针转
         switch directionFlag {

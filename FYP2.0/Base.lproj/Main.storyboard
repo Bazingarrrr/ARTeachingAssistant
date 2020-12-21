@@ -64,6 +64,8 @@
                     <connections>
                         <outlet property="arView" destination="j0S-Xe-XxS" id="OBX-T9-XTf"/>
                         <outlet property="driveAngleVelocity" destination="n2C-fE-PoZ" id="ScL-XK-ccu"/>
+                        <outlet property="driverLength" destination="JGb-Rb-buX" id="ToZ-5M-kbg"/>
+                        <outlet property="driverVelocity" destination="2oO-lO-YJY" id="Xp7-0t-NDt"/>
                         <outlet property="sliderBarLink1" destination="asE-yi-is4" id="bfu-Y7-hoj"/>
                     </connections>
                 </viewController>
