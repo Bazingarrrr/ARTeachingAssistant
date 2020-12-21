@@ -84,7 +84,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GBW-xd-RZI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1320" y="-85"/>
+            <point key="canvasLocation" x="-1164" y="-86"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="YJZ-et-BWd">
@@ -94,31 +94,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="rch-lL-vb1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="rch-lL-vb1">
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htI-Xo-FSc">
-                                <rect key="frame" x="30.666666666666657" y="74" width="367" height="254"/>
-                                <state key="normal" image="FourBarLinkage"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="KqK-In-mP6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKg-ON-AWj">
-                                <rect key="frame" x="42" y="473" width="356" height="256"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="crankSlider"/>
-                            </button>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="V0j-qn-vxG">
+                                <rect key="frame" x="20" y="94" width="388" height="782"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htI-Xo-FSc" userLabel="FourBarLinkButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="388" height="247.33333333333334"/>
+                                        <state key="normal" image="FourBarLinkage"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="KqK-In-mP6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKg-ON-AWj" userLabel="CrankSliderButton">
+                                        <rect key="frame" x="0.0" y="267.33333333333331" width="388" height="247.33333333333331"/>
+                                        <state key="normal" backgroundImage="crankSlider"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ks-le-0FW" userLabel="FourStrokeEngine">
+                                        <rect key="frame" x="0.0" y="534.66666666666663" width="388" height="247.33333333333337"/>
+                                        <state key="normal" backgroundImage="FourStrokeEngine"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4sV-YM-9qP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="htI-Xo-FSc" firstAttribute="centerX" secondItem="fgB-JS-cUW" secondAttribute="centerX" id="SKR-uE-921"/>
-                            <constraint firstItem="rch-lL-vb1" firstAttribute="top" secondItem="fgB-JS-cUW" secondAttribute="top" id="Z0W-Tx-5ry"/>
-                            <constraint firstAttribute="trailing" secondItem="rch-lL-vb1" secondAttribute="trailing" id="ZE5-2H-3Ec"/>
-                            <constraint firstItem="htI-Xo-FSc" firstAttribute="top" secondItem="4sV-YM-9qP" secondAttribute="top" constant="30" id="etM-Nq-PFE"/>
-                            <constraint firstAttribute="bottom" secondItem="rch-lL-vb1" secondAttribute="bottom" id="oor-jl-iSS"/>
-                            <constraint firstItem="rch-lL-vb1" firstAttribute="leading" secondItem="fgB-JS-cUW" secondAttribute="leading" id="u8c-fA-icy"/>
+                            <constraint firstItem="V0j-qn-vxG" firstAttribute="top" secondItem="4sV-YM-9qP" secondAttribute="top" constant="50" id="AE3-MY-9dc"/>
+                            <constraint firstAttribute="bottom" secondItem="V0j-qn-vxG" secondAttribute="bottom" constant="50" id="Gxr-6M-sRq"/>
+                            <constraint firstItem="V0j-qn-vxG" firstAttribute="leading" secondItem="4sV-YM-9qP" secondAttribute="leading" constant="20" id="Wud-v7-To9"/>
+                            <constraint firstItem="4sV-YM-9qP" firstAttribute="trailing" secondItem="V0j-qn-vxG" secondAttribute="trailing" constant="20" id="chk-Cj-T6m"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oeR-9F-8hZ"/>
@@ -131,6 +138,7 @@
     <resources>
         <image name="BackgroundImage" width="375" height="667"/>
         <image name="FourBarLinkage" width="367" height="254"/>
+        <image name="FourStrokeEngine" width="309" height="163"/>
         <image name="crankSlider" width="293" height="172"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
