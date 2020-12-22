@@ -21,6 +21,8 @@ class ARSceneViewController: UIViewController {
     var linkLength:Float?
     var linkRadius:Float = 0.005
     
+    var mode:String = ""
+    
     var currentNode:SCNNode?
     var currentNode_detected:SCNNode?
     
@@ -34,6 +36,8 @@ class ARSceneViewController: UIViewController {
     @IBOutlet weak var driverLength: UITextField!
     @IBOutlet weak var driverVelocity: UITextField!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -45,6 +49,9 @@ class ARSceneViewController: UIViewController {
         
         addFourBarLink(to: arView, ofLength: fourBarLinkLength!, with: fourBarInitialAngle!)
         addCrankSlider(driveAngle: pi/6)
+        
+        
+        
         
     }
     

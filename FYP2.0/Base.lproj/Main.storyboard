@@ -11,7 +11,7 @@
         <!--Scene View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ARSceneViewController" customModule="FYP2_3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ARView" id="BYZ-38-t0r" customClass="ARSceneViewController" customModule="FYP2_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,12 +107,15 @@
                                         <rect key="frame" x="0.0" y="0.0" width="388" height="247.33333333333334"/>
                                         <state key="normal" image="FourBarLinkage"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="KqK-In-mP6"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="fourBarMode" id="KqK-In-mP6"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKg-ON-AWj" userLabel="CrankSliderButton">
                                         <rect key="frame" x="0.0" y="267.33333333333331" width="388" height="247.33333333333331"/>
                                         <state key="normal" backgroundImage="crankSlider"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="nwZ-nk-8v2"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ks-le-0FW" userLabel="FourStrokeEngine">
                                         <rect key="frame" x="0.0" y="534.66666666666663" width="388" height="247.33333333333337"/>
@@ -137,6 +140,9 @@
             <point key="canvasLocation" x="-372.89719626168221" y="-85.529157667386613"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="KqK-In-mP6"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="BackgroundImage" width="375" height="667"/>
         <image name="FourBarLinkage" width="367" height="254"/>

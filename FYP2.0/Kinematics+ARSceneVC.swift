@@ -146,10 +146,6 @@ extension ARSceneViewController {
 //
 //        }
         
-        
-        
-        
-        
         do {
             var L_diagonal:Float = L[0]*L[0] + L[3]*L[3] - 2*L[0]*L[3]*cos(pi/2 - driveRotationAngle)
             L_diagonal = L_diagonal.squareRoot()
@@ -185,7 +181,6 @@ extension ARSceneViewController {
         
     }
     
-    
     func printDegreeFormat(fourBarLinkRotationAngle:[Float]) {
         var degreeOutput = [Float]()
         
@@ -196,7 +191,6 @@ extension ARSceneViewController {
         print(degreeOutput)
 
     }
-    
     
     func initialPositionCaculate(fourBarLinkLength:[Float]) -> [Float] {
         
@@ -219,12 +213,14 @@ extension ARSceneViewController {
         
     }
     
-    
+
     // MARK: - Display the Movement
-    func generateNewNode(){
+    func generateNewNode(mode:String = "crankSlider"){
         
         var dtheta:Float = 0
+        var displayAngle:[Float] = [0, 0, 0, 0]     // 【0】作为驱动角， 并更新从动角的各个值
         
+        // 更新 长度 和 速度 参数。
         self.fourBarLinkLength = Array(repeating: sliderBarLink1.value, count: 4)
         self.driverLength.text = String( sliderBarLink1.value )
         
@@ -236,40 +232,55 @@ extension ARSceneViewController {
         default:
             dtheta = -pi/90
         }
-    
-// 【0】作为驱动角， 并更新从动角的各个值
-        var displayAngle:[Float] = [0, 0, 0, 0]
-        
         fourBarRotationAngle![0] += dtheta
         
-//        if fourBarRotationAngle![0] <= -pi/2+pi/90 {  directionFlag = false }
-//        if fourBarRotationAngle![0] > 0 - pi/90 {   directionFlag = true    }
-        
-//        fourBarRotationAngle = inverseKinematics(fourBarLinkLength: fourBarLinkLength!, driveRotationAngle: fourBarRotationAngle![0], initialAngle: fourBarInitialAngle!)
-        
-        let followerAngle = inverseKinematics(driveAngle: fourBarRotationAngle![0], crankLength: sliderBarLink1.value, followerLength: 0.25)
-        
-//        for i in 0...3 {
-//            displayAngle[i] = fourBarInitialAngle![i] + fourBarRotationAngle![i]
-//        }
-        
-// 新的角度算完了以后，移除当前的node
-        guard fourBarInitialAngle != nil  && fourBarLinkLength != nil else {
-            return
-        }
-        removeAllNodes()
-        
-// 更新当前的node, 以区分于初始状态（初始化 和 后续状态 是不一样的）
-        if (currentNode_detected != nil) {
-            currentNode = currentNode_detected
-        }
-        else {
-            currentNode = arView.scene.rootNode
+        func fourBar(){
+            
+            if fourBarRotationAngle![0] <= -pi/2+pi/90 {  directionFlag = false }
+            if fourBarRotationAngle![0] > 0 - pi/90 {   directionFlag = true    }
+            
+            fourBarRotationAngle = inverseKinematics(fourBarLinkLength: fourBarLinkLength!, driveRotationAngle: fourBarRotationAngle![0], initialAngle: fourBarInitialAngle!)
+            
+            for i in 0...3 {
+                displayAngle[i] = fourBarInitialAngle![i] + fourBarRotationAngle![i]
+            }
+            
+            addFourBarLink(to: arView, ofLength: fourBarLinkLength!, with: displayAngle)
         }
         
+        func crankSlider(){
+            let followerAngle = inverseKinematics(driveAngle: fourBarRotationAngle![0], crankLength: sliderBarLink1.value, followerLength: 0.25)
+            addCrankSlider(driveAngle: fourBarRotationAngle![0], followerAngle: followerAngle, crankLength: sliderBarLink1.value, followerLength: 0.25)
+        }
         
-//        addFourBarLink(to: arView, ofLength: fourBarLinkLength!, with: displayAngle)
-        addCrankSlider(driveAngle: fourBarRotationAngle![0], followerAngle: followerAngle, crankLength: sliderBarLink1.value, followerLength: 0.25)
+        func renewNode(){
+            // 新的角度算完了以后，移除当前的node
+                    guard fourBarInitialAngle != nil  && fourBarLinkLength != nil else {
+                        return
+                    }
+                    removeAllNodes()
+                    
+            // 更新当前的node, 以区分于初始状态（初始化 和 后续状态 是不一样的）
+                    if (currentNode_detected != nil) {
+                        currentNode = currentNode_detected
+                    }
+                    else {
+                        currentNode = arView.scene.rootNode
+                    }
+        }
+        
+        renewNode()
+        
+        switch mode {
+        case "fourBar":
+            fourBar()
+            break
+        case "crankSlider":
+            crankSlider()
+            break
+        default:
+            break
+        }
         
     }
     
