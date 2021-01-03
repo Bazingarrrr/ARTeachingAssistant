@@ -12,25 +12,21 @@ import ARKit
 extension ARSceneViewController: ARSCNViewDelegate, ARSessionDelegate {
     
     func superImpositionSetUp(configuration:ARWorldTrackingConfiguration) {
-
-        
             
         arView.delegate = self
         arView.session.delegate = self
-        
-        
+                
         guard let referenceImages = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: nil) else {
             fatalError("Missing expected asset catalog resources.")
         }
 
         configuration.detectionImages = referenceImages
-        
-        
     }
     
     // MARK: - ARSCNViewDelegate (Image detection results)
     /// - Tag: ARImageAnchor-Visualizing
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
+        
         guard let imageAnchor = anchor as? ARImageAnchor else { return }
         
         let referenceImage = imageAnchor.referenceImage

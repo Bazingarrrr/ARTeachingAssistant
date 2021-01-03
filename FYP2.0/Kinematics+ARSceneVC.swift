@@ -292,7 +292,4 @@ extension ARSceneViewController {
         }
         
     }
-     
-    
-    
 }

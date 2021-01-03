@@ -23,6 +23,7 @@
 /* Begin PBXFileReference section */
 		9144D2B92588E4BA00A32DCD /* Add3DObject+ARSCNView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Add3DObject+ARSCNView.swift"; sourceTree = "<group>"; };
 		9144D2BC2588E56300A32DCD /* SlideCrank+ARSCNView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SlideCrank+ARSCNView.swift"; sourceTree = "<group>"; };
+		9179764825A1A99700C09AE7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9180D7632567933200D3F16D /* Interface+ARSceneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Interface+ARSceneVC.swift"; sourceTree = "<group>"; };
 		9180D7662567AFDF00D3F16D /* superimposition+ARSCeneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "superimposition+ARSCeneVC.swift"; sourceTree = "<group>"; };
 		918D595825636A91005E84A6 /* FYP2.3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYP2.3.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +51,7 @@
 		918D594F25636A91005E84A6 = {
 			isa = PBXGroup;
 			children = (
+				9179764825A1A99700C09AE7 /* README.md */,
 				918D595A25636A91005E84A6 /* FYP2.0 */,
 				918D595925636A91005E84A6 /* Products */,
 			);
