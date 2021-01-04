@@ -17,7 +17,6 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        
         if let nextVC = segue.destination as? ARSceneViewController {
             
             if sender as? NSObject == fourBarButton {
@@ -36,7 +35,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.navigationController?.isNavigationBarHidden = true
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        self.navigationController?.isNavigationBarHidden = false
     }
     
 

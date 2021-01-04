@@ -3,5 +3,5 @@
 
     * add Velocity Diagram
     * add Multiple QRCode Recognition
-    * add Navigation Bar
+    * add Navigation Bar【DONE】
 
