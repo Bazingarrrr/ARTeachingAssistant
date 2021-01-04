@@ -288,7 +288,7 @@ extension ARSceneViewController {
     func tapTimer() -> Void {
         
         self.timer = Timer.scheduledTimer(withTimeInterval: TimeInterval(1/self.driveAngleVelocity.value), repeats: true) { (Timer) in
-            self.generateNewNode()
+            self.generateNewNode(mode: self.mode)
         }
         
     }

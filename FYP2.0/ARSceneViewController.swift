@@ -13,6 +13,9 @@ import ARKit
 let pi:Float = 3.14
 var indicatorOfNode = 1
 
+
+
+
 class ARSceneViewController: UIViewController {
 
     var fourBarLinkLength:[Float]?
@@ -49,8 +52,6 @@ class ARSceneViewController: UIViewController {
         
         addFourBarLink(to: arView, ofLength: fourBarLinkLength!, with: fourBarInitialAngle!)
         addCrankSlider(driveAngle: pi/6)
-        
-        
         
         
     }
@@ -99,7 +100,7 @@ class ARSceneViewController: UIViewController {
         timer!.invalidate()
         timer = Timer.scheduledTimer(withTimeInterval: TimeInterval(1/self.driveAngleVelocity.value), repeats: true) { (Timer) in
             self.driverVelocity.text = String( self.driveAngleVelocity.value )
-            self.generateNewNode()
+            self.generateNewNode(mode:self.mode)
         }
     }
     

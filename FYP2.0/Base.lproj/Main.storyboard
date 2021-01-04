@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nlH-U0-ij4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EQH-bR-Yj4">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -20,10 +20,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </arscnView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="asE-yi-is4">
-                                <rect key="frame" x="8" y="64" width="308" height="31"/>
+                                <rect key="frame" x="8" y="108" width="308" height="31"/>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="n2C-fE-PoZ">
-                                <rect key="frame" x="8" y="104" width="308" height="31"/>
+                                <rect key="frame" x="8" y="148" width="308" height="31"/>
                                 <color key="thumbTintColor" systemColor="systemTealColor"/>
                                 <connections>
                                     <action selector="changeVelocity:" destination="BYZ-38-t0r" eventType="valueChanged" id="LK9-gT-hkV"/>
@@ -71,27 +71,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="367" y="-86"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="m15-Ku-zeg">
-            <objects>
-                <navigationController navigationBarHidden="YES" id="nlH-U0-ij4" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7a0-e8-Pqg">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="Odx-PB-cam" kind="relationship" relationship="rootViewController" id="X9A-Ko-pMU"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GBW-xd-RZI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1164" y="-86"/>
+            <point key="canvasLocation" x="1265.8878504672896" y="-86.177105831533481"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="YJZ-et-BWd">
             <objects>
-                <viewController id="Odx-PB-cam" sceneMemberID="viewController">
+                <viewController id="Odx-PB-cam" customClass="ViewController" customModule="FYP2_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fgB-JS-cUW">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -101,24 +86,24 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="V0j-qn-vxG">
-                                <rect key="frame" x="20" y="94" width="388" height="782"/>
+                                <rect key="frame" x="20" y="138" width="388" height="738"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htI-Xo-FSc" userLabel="FourBarLinkButton">
-                                        <rect key="frame" x="0.0" y="0.0" width="388" height="247.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="388" height="232.66666666666666"/>
                                         <state key="normal" image="FourBarLinkage"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" identifier="fourBarMode" id="KqK-In-mP6"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="q1" id="XXp-SN-CRy"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKg-ON-AWj" userLabel="CrankSliderButton">
-                                        <rect key="frame" x="0.0" y="267.33333333333331" width="388" height="247.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="252.66666666666669" width="388" height="232.66666666666669"/>
                                         <state key="normal" backgroundImage="crankSlider"/>
                                         <connections>
                                             <segue destination="BYZ-38-t0r" kind="show" id="nwZ-nk-8v2"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ks-le-0FW" userLabel="FourStrokeEngine">
-                                        <rect key="frame" x="0.0" y="534.66666666666663" width="388" height="247.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="505.33333333333343" width="388" height="232.66666666666669"/>
                                         <state key="normal" backgroundImage="FourStrokeEngine"/>
                                     </button>
                                 </subviews>
@@ -134,14 +119,36 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oeR-9F-8hZ"/>
+                    <connections>
+                        <outlet property="crankSliderButton" destination="xKg-ON-AWj" id="oIM-OB-rkc"/>
+                        <outlet property="fourBarButton" destination="htI-Xo-FSc" id="KaC-7N-xFF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U3Z-yp-jr7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="527.10280373831768" y="-85.529157667386613"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BGO-Vc-oHN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EQH-bR-Yj4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="R6H-OQ-NAh">
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Odx-PB-cam" kind="relationship" relationship="rootViewController" id="Ifs-lH-uc7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dRG-2E-ny2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-372.89719626168221" y="-85.529157667386613"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="KqK-In-mP6"/>
+        <segue reference="XXp-SN-CRy"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="BackgroundImage" width="375" height="667"/>
