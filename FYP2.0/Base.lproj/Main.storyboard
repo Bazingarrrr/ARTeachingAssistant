@@ -71,7 +71,62 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1562" y="-516"/>
+            <point key="canvasLocation" x="2251" y="-516"/>
+        </scene>
+        <!--Mode DescriptionVC-->
+        <scene sceneID="gxV-e8-qMn">
+            <objects>
+                <viewController id="lZl-fS-Krv" customClass="ModeDescriptionVC" customModule="FYP2_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6tZ-OG-X7C">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="miZ-Kp-lLw">
+                                <rect key="frame" x="0.0" y="88" width="428" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="z5R-iL-QJX"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="J5U-LF-JeY">
+                                <rect key="frame" x="0.0" y="393" width="428" height="400"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="Npe-s5-s2L"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6c-zz-Sq9">
+                                <rect key="frame" x="191" y="710" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="ee0-wS-yC9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NM5-zE-W09"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="J5U-LF-JeY" firstAttribute="leading" secondItem="NM5-zE-W09" secondAttribute="leading" id="Cwf-oX-JSe"/>
+                            <constraint firstItem="J5U-LF-JeY" firstAttribute="top" secondItem="miZ-Kp-lLw" secondAttribute="bottom" constant="5" id="TXx-bS-3ba"/>
+                            <constraint firstItem="miZ-Kp-lLw" firstAttribute="leading" secondItem="NM5-zE-W09" secondAttribute="leading" id="WSv-Z7-cQw"/>
+                            <constraint firstItem="NM5-zE-W09" firstAttribute="trailing" secondItem="J5U-LF-JeY" secondAttribute="trailing" id="aaD-WZ-npL"/>
+                            <constraint firstItem="NM5-zE-W09" firstAttribute="trailing" secondItem="miZ-Kp-lLw" secondAttribute="trailing" id="wrv-xP-o1s"/>
+                            <constraint firstItem="miZ-Kp-lLw" firstAttribute="top" secondItem="NM5-zE-W09" secondAttribute="top" id="x3r-uX-6mV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YuD-FX-J2U"/>
+                    <connections>
+                        <outlet property="modeDiscription" destination="J5U-LF-JeY" id="7WW-oM-tSj"/>
+                        <outlet property="modeImage" destination="miZ-Kp-lLw" id="xyN-sM-llO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MbQ-BI-kpt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1480" y="-516"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BGO-Vc-oHN">
@@ -103,9 +158,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                             </imageView>
                             <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1T-Sh-gd7">
-                                <rect key="frame" x="130" y="766" width="168" height="96"/>
+                                <rect key="frame" x="141.66666666666666" y="778" width="144.99999999999997" height="84"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="70"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <segue destination="P89-Yj-0T4" kind="show" id="ZbM-aR-ezP"/>
@@ -136,7 +191,7 @@
         <!--Mode SelectionVC-->
         <scene sceneID="ZzI-yv-doR">
             <objects>
-                <tableViewController id="P89-Yj-0T4" customClass="modeSelectionVC" customModule="FYP2_3" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="P89-Yj-0T4" customClass="ModeSelectionVC" customModule="FYP2_3" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bHV-sC-a0C">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -175,7 +230,7 @@
                                 <connections>
                                     <outlet property="modeImage" destination="Hxh-xA-sdk" id="K1w-9f-zIr"/>
                                     <outlet property="modeName" destination="YdC-Od-AyL" id="yli-nw-nCx"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="goToARView" id="NHZ-Hu-my0"/>
+                                    <segue destination="lZl-fS-Krv" kind="show" id="L5A-lW-Vv3"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -193,6 +248,9 @@
     </scenes>
     <resources>
         <image name="Home" width="1936" height="1938"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -16,7 +16,7 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        startBtn.layer.cornerRadius = 2.0
+        startBtn.layer.cornerRadius = 30
         
         let min = CGFloat(-80)
         let max = CGFloat(80)

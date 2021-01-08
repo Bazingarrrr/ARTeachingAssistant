@@ -7,7 +7,7 @@
 
 import UIKit
 
-class modeSelectionVC: UITableViewController {
+class ModeSelectionVC: UITableViewController {
 
     var mode:String = ""
     
@@ -130,7 +130,7 @@ class modeSelectionVC: UITableViewController {
         }
         
         // Get the new view controller using segue.destination.
-        if let nextVC = segue.destination as? ARSceneViewController {
+        if let nextVC = segue.destination as? ModeDescriptionVC {
             
             nextVC.mode = mode
         }
