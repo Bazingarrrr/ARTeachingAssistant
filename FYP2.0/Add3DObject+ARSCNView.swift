@@ -86,7 +86,7 @@ func addLink2D(to sceneView:ARSCNView, of length:Float, lastLength:Float = 0, wi
     
     // 这个判断是干什么的。
     if (currentNode == self.arView.scene.rootNode) {
-        addSphere(to: sceneView, at: SCNVector3(0,0,-0.3), with: SCNVector4(0,0,1,rotation), eularAngle: nil )
+        addSphere(to: sceneView, at: SCNVector3(0,0,0), with: SCNVector4(0,0,1,rotation), eularAngle: nil )
     }
     else if (currentNode == self.currentNode_detected) {
         addSphere(to: sceneView, at: SCNVector3(0,0,0), eularAngle: SCNVector3(pi/2, pi/2, 0) )

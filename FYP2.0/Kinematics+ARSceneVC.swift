@@ -215,7 +215,7 @@ extension ARSceneViewController {
     
 
     // MARK: - Display the Movement
-    func generateNewNode(mode:String = "CrankSlider"){
+    func generateNewNode(mode:String = "crankSlider"){
         
         var dtheta:Float = 0
         var displayAngle:[Float] = [0, 0, 0, 0]     // 【0】作为驱动角， 并更新从动角的各个值
@@ -272,14 +272,14 @@ extension ARSceneViewController {
         renewNode()
         
         switch mode {
-            case "FourBarLinkage":
-                fourBar()
-                break
-            case "CrankSlider":
-                crankSlider()
-                break
-            default:
-                break
+        case "fourBar":
+            fourBar()
+            break
+        case "crankSlider":
+            crankSlider()
+            break
+        default:
+            break
         }
         
     }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9144D2BA2588E4BA00A32DCD /* Add3DObject+ARSCNView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9144D2B92588E4BA00A32DCD /* Add3DObject+ARSCNView.swift */; };
 		9144D2BD2588E56300A32DCD /* SlideCrank+ARSCNView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9144D2BC2588E56300A32DCD /* SlideCrank+ARSCNView.swift */; };
+		9179765325A1E9DB00C09AE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179765225A1E9DB00C09AE7 /* ViewController.swift */; };
 		9180D7642567933200D3F16D /* Interface+ARSceneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180D7632567933200D3F16D /* Interface+ARSceneVC.swift */; };
 		9180D7672567AFDF00D3F16D /* superimposition+ARSCeneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180D7662567AFDF00D3F16D /* superimposition+ARSCeneVC.swift */; };
 		918D595C25636A91005E84A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918D595B25636A91005E84A6 /* AppDelegate.swift */; };
@@ -18,15 +19,13 @@
 		918D596525636A92005E84A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 918D596425636A92005E84A6 /* Assets.xcassets */; };
 		918D596825636A92005E84A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 918D596625636A92005E84A6 /* LaunchScreen.storyboard */; };
 		9191226D256549FC004B6027 /* Kinematics+ARSceneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9191226C256549FC004B6027 /* Kinematics+ARSceneVC.swift */; };
-		9640725425A8347C006BDD31 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9640725325A8347C006BDD31 /* HomeVC.swift */; };
-		9640725825A83671006BDD31 /* modeSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9640725725A83671006BDD31 /* modeSelectionVC.swift */; };
-		9640725C25A83970006BDD31 /* ModeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9640725B25A83970006BDD31 /* ModeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9144D2B92588E4BA00A32DCD /* Add3DObject+ARSCNView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Add3DObject+ARSCNView.swift"; sourceTree = "<group>"; };
 		9144D2BC2588E56300A32DCD /* SlideCrank+ARSCNView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SlideCrank+ARSCNView.swift"; sourceTree = "<group>"; };
 		9179764825A1A99700C09AE7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9179765225A1E9DB00C09AE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9180D7632567933200D3F16D /* Interface+ARSceneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Interface+ARSceneVC.swift"; sourceTree = "<group>"; };
 		9180D7662567AFDF00D3F16D /* superimposition+ARSCeneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "superimposition+ARSCeneVC.swift"; sourceTree = "<group>"; };
 		918D595825636A91005E84A6 /* FYP2.3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYP2.3.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,9 +37,6 @@
 		918D596725636A92005E84A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		918D596925636A92005E84A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9191226C256549FC004B6027 /* Kinematics+ARSceneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kinematics+ARSceneVC.swift"; sourceTree = "<group>"; };
-		9640725325A8347C006BDD31 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		9640725725A83671006BDD31 /* modeSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modeSelectionVC.swift; sourceTree = "<group>"; };
-		9640725B25A83970006BDD31 /* ModeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +72,7 @@
 			children = (
 				918D595B25636A91005E84A6 /* AppDelegate.swift */,
 				918D595D25636A91005E84A6 /* SceneDelegate.swift */,
-				9640725325A8347C006BDD31 /* HomeVC.swift */,
-				9640725B25A83970006BDD31 /* ModeCell.swift */,
-				9640725725A83671006BDD31 /* modeSelectionVC.swift */,
+				9179765225A1E9DB00C09AE7 /* ViewController.swift */,
 				918D595F25636A91005E84A6 /* ARSceneViewController.swift */,
 				9144D2B92588E4BA00A32DCD /* Add3DObject+ARSCNView.swift */,
 				9144D2BC2588E56300A32DCD /* SlideCrank+ARSCNView.swift */,
@@ -164,12 +158,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9144D2BA2588E4BA00A32DCD /* Add3DObject+ARSCNView.swift in Sources */,
-				9640725425A8347C006BDD31 /* HomeVC.swift in Sources */,
 				9180D7642567933200D3F16D /* Interface+ARSceneVC.swift in Sources */,
 				9144D2BD2588E56300A32DCD /* SlideCrank+ARSCNView.swift in Sources */,
+				9179765325A1E9DB00C09AE7 /* ViewController.swift in Sources */,
 				9180D7672567AFDF00D3F16D /* superimposition+ARSCeneVC.swift in Sources */,
-				9640725C25A83970006BDD31 /* ModeCell.swift in Sources */,
-				9640725825A83671006BDD31 /* modeSelectionVC.swift in Sources */,
 				918D596025636A91005E84A6 /* ARSceneViewController.swift in Sources */,
 				918D595C25636A91005E84A6 /* AppDelegate.swift in Sources */,
 				9191226D256549FC004B6027 /* Kinematics+ARSceneVC.swift in Sources */,
