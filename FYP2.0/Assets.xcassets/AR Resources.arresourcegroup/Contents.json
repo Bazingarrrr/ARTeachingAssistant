@@ -5,7 +5,16 @@
   },
   "resources" : [
     {
-      "filename" : "HandSomeYi.arreferenceimage"
+      "filename" : "firstQRCode.arreferenceimage"
+    },
+    {
+      "filename" : "forthQRCode.arreferenceimage"
+    },
+    {
+      "filename" : "secondQRCode.arreferenceimage"
+    },
+    {
+      "filename" : "thirdQRCode.arreferenceimage"
     }
   ]
 }

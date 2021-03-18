@@ -3,15 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		9144D2BA2588E4BA00A32DCD /* Add3DObject+ARSCNView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9144D2B92588E4BA00A32DCD /* Add3DObject+ARSCNView.swift */; };
-		9144D2BD2588E56300A32DCD /* SlideCrank+ARSCNView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9144D2BC2588E56300A32DCD /* SlideCrank+ARSCNView.swift */; };
+		9144D2BD2588E56300A32DCD /* SliderCrank+ARSCNView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9144D2BC2588E56300A32DCD /* SliderCrank+ARSCNView.swift */; };
 		9179766125A89D0F00C09AE7 /* ModeDescriptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179766025A89D0F00C09AE7 /* ModeDescriptionVC.swift */; };
 		9180D7642567933200D3F16D /* Interface+ARSceneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180D7632567933200D3F16D /* Interface+ARSceneVC.swift */; };
-		9180D7672567AFDF00D3F16D /* superimposition+ARSCeneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180D7662567AFDF00D3F16D /* superimposition+ARSCeneVC.swift */; };
+		9180D7672567AFDF00D3F16D /* Superimposition+ARSCeneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180D7662567AFDF00D3F16D /* Superimposition+ARSCeneVC.swift */; };
 		918D595C25636A91005E84A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918D595B25636A91005E84A6 /* AppDelegate.swift */; };
 		918D595E25636A91005E84A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918D595D25636A91005E84A6 /* SceneDelegate.swift */; };
 		918D596025636A91005E84A6 /* ARSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918D595F25636A91005E84A6 /* ARSceneViewController.swift */; };
@@ -19,19 +19,22 @@
 		918D596525636A92005E84A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 918D596425636A92005E84A6 /* Assets.xcassets */; };
 		918D596825636A92005E84A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 918D596625636A92005E84A6 /* LaunchScreen.storyboard */; };
 		9191226D256549FC004B6027 /* Kinematics+ARSceneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9191226C256549FC004B6027 /* Kinematics+ARSceneVC.swift */; };
-		9604094125AC142C00DBE11B /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9604094025AC142C00DBE11B /* Stock.swift */; };
 		9640725425A8347C006BDD31 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9640725325A8347C006BDD31 /* HomeVC.swift */; };
 		9640725825A83671006BDD31 /* ModeSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9640725725A83671006BDD31 /* ModeSelectionVC.swift */; };
 		9640725C25A83970006BDD31 /* ModeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9640725B25A83970006BDD31 /* ModeCell.swift */; };
+		B709D3A5C31D131AD5044B63 /* Pods_FYP2_3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 874D4517C7596AC1632F1B77 /* Pods_FYP2_3.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CD8A98AFA6C977A26E96BC3 /* Pods-FYP2.3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYP2.3.release.xcconfig"; path = "Target Support Files/Pods-FYP2.3/Pods-FYP2.3.release.xcconfig"; sourceTree = "<group>"; };
+		545C4B7E865641212CD30AE7 /* Pods-FYP2.3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYP2.3.debug.xcconfig"; path = "Target Support Files/Pods-FYP2.3/Pods-FYP2.3.debug.xcconfig"; sourceTree = "<group>"; };
+		874D4517C7596AC1632F1B77 /* Pods_FYP2_3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FYP2_3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9144D2B92588E4BA00A32DCD /* Add3DObject+ARSCNView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Add3DObject+ARSCNView.swift"; sourceTree = "<group>"; };
-		9144D2BC2588E56300A32DCD /* SlideCrank+ARSCNView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SlideCrank+ARSCNView.swift"; sourceTree = "<group>"; };
+		9144D2BC2588E56300A32DCD /* SliderCrank+ARSCNView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SliderCrank+ARSCNView.swift"; sourceTree = "<group>"; };
 		9179764825A1A99700C09AE7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9179766025A89D0F00C09AE7 /* ModeDescriptionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeDescriptionVC.swift; sourceTree = "<group>"; };
 		9180D7632567933200D3F16D /* Interface+ARSceneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Interface+ARSceneVC.swift"; sourceTree = "<group>"; };
-		9180D7662567AFDF00D3F16D /* superimposition+ARSCeneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "superimposition+ARSCeneVC.swift"; sourceTree = "<group>"; };
+		9180D7662567AFDF00D3F16D /* Superimposition+ARSCeneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Superimposition+ARSCeneVC.swift"; sourceTree = "<group>"; };
 		918D595825636A91005E84A6 /* FYP2.3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYP2.3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		918D595B25636A91005E84A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		918D595D25636A91005E84A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +44,6 @@
 		918D596725636A92005E84A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		918D596925636A92005E84A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9191226C256549FC004B6027 /* Kinematics+ARSceneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kinematics+ARSceneVC.swift"; sourceTree = "<group>"; };
-		9604094025AC142C00DBE11B /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		9640725325A8347C006BDD31 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		9640725725A83671006BDD31 /* ModeSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeSelectionVC.swift; sourceTree = "<group>"; };
 		9640725B25A83970006BDD31 /* ModeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeCell.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B709D3A5C31D131AD5044B63 /* Pods_FYP2_3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +67,8 @@
 				9179764825A1A99700C09AE7 /* README.md */,
 				918D595A25636A91005E84A6 /* FYP2.0 */,
 				918D595925636A91005E84A6 /* Products */,
+				FE52D2605A0E1743742A19A7 /* Pods */,
+				A44538FA17C7B1A221985821 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,19 +83,13 @@
 		918D595A25636A91005E84A6 /* FYP2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				9604093F25AC141300DBE11B /* Personal */,
 				918D595B25636A91005E84A6 /* AppDelegate.swift */,
 				918D595D25636A91005E84A6 /* SceneDelegate.swift */,
 				9640725325A8347C006BDD31 /* HomeVC.swift */,
 				9640725B25A83970006BDD31 /* ModeCell.swift */,
 				9640725725A83671006BDD31 /* ModeSelectionVC.swift */,
 				9179766025A89D0F00C09AE7 /* ModeDescriptionVC.swift */,
-				918D595F25636A91005E84A6 /* ARSceneViewController.swift */,
-				9144D2B92588E4BA00A32DCD /* Add3DObject+ARSCNView.swift */,
-				9144D2BC2588E56300A32DCD /* SlideCrank+ARSCNView.swift */,
-				9191226C256549FC004B6027 /* Kinematics+ARSceneVC.swift */,
-				9180D7632567933200D3F16D /* Interface+ARSceneVC.swift */,
-				9180D7662567AFDF00D3F16D /* superimposition+ARSCeneVC.swift */,
+				91FDE27A25E3622C00EC0F81 /* ARSceneViewController */,
 				918D596125636A91005E84A6 /* Main.storyboard */,
 				918D596425636A92005E84A6 /* Assets.xcassets */,
 				918D596625636A92005E84A6 /* LaunchScreen.storyboard */,
@@ -99,12 +98,34 @@
 			path = FYP2.0;
 			sourceTree = "<group>";
 		};
-		9604093F25AC141300DBE11B /* Personal */ = {
+		91FDE27A25E3622C00EC0F81 /* ARSceneViewController */ = {
 			isa = PBXGroup;
 			children = (
-				9604094025AC142C00DBE11B /* Stock.swift */,
+				918D595F25636A91005E84A6 /* ARSceneViewController.swift */,
+				9144D2B92588E4BA00A32DCD /* Add3DObject+ARSCNView.swift */,
+				9144D2BC2588E56300A32DCD /* SliderCrank+ARSCNView.swift */,
+				9191226C256549FC004B6027 /* Kinematics+ARSceneVC.swift */,
+				9180D7632567933200D3F16D /* Interface+ARSceneVC.swift */,
+				9180D7662567AFDF00D3F16D /* Superimposition+ARSCeneVC.swift */,
 			);
-			path = Personal;
+			path = ARSceneViewController;
+			sourceTree = "<group>";
+		};
+		A44538FA17C7B1A221985821 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				874D4517C7596AC1632F1B77 /* Pods_FYP2_3.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE52D2605A0E1743742A19A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				545C4B7E865641212CD30AE7 /* Pods-FYP2.3.debug.xcconfig */,
+				0CD8A98AFA6C977A26E96BC3 /* Pods-FYP2.3.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -114,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 918D596C25636A92005E84A6 /* Build configuration list for PBXNativeTarget "FYP2.3" */;
 			buildPhases = (
+				75783011CBE3474E2AF6DB29 /* [CP] Check Pods Manifest.lock */,
 				918D595425636A91005E84A6 /* Sources */,
 				918D595525636A91005E84A6 /* Frameworks */,
 				918D595625636A91005E84A6 /* Resources */,
+				C43A4103121B6F083183A023 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -172,6 +195,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		75783011CBE3474E2AF6DB29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FYP2.3-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C43A4103121B6F083183A023 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FYP2.3/Pods-FYP2.3-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FYP2.3/Pods-FYP2.3-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FYP2.3/Pods-FYP2.3-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		918D595425636A91005E84A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -180,9 +245,8 @@
 				9144D2BA2588E4BA00A32DCD /* Add3DObject+ARSCNView.swift in Sources */,
 				9640725425A8347C006BDD31 /* HomeVC.swift in Sources */,
 				9180D7642567933200D3F16D /* Interface+ARSceneVC.swift in Sources */,
-				9144D2BD2588E56300A32DCD /* SlideCrank+ARSCNView.swift in Sources */,
-				9604094125AC142C00DBE11B /* Stock.swift in Sources */,
-				9180D7672567AFDF00D3F16D /* superimposition+ARSCeneVC.swift in Sources */,
+				9144D2BD2588E56300A32DCD /* SliderCrank+ARSCNView.swift in Sources */,
+				9180D7672567AFDF00D3F16D /* Superimposition+ARSCeneVC.swift in Sources */,
 				9640725C25A83970006BDD31 /* ModeCell.swift in Sources */,
 				9640725825A83671006BDD31 /* ModeSelectionVC.swift in Sources */,
 				918D596025636A91005E84A6 /* ARSceneViewController.swift in Sources */,
@@ -333,9 +397,11 @@
 		};
 		918D596D25636A92005E84A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 545C4B7E865641212CD30AE7 /* Pods-FYP2.3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FK638FPY54;
 				INFOPLIST_FILE = FYP2.0/Info.plist;
@@ -345,6 +411,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "DGONET.FYP2-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -352,9 +419,11 @@
 		};
 		918D596E25636A92005E84A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CD8A98AFA6C977A26E96BC3 /* Pods-FYP2.3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FK638FPY54;
 				INFOPLIST_FILE = FYP2.0/Info.plist;
@@ -364,6 +433,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "DGONET.FYP2-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

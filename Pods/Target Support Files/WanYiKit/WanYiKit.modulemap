@@ -1,0 +1,6 @@
+framework module WanYiKit {
+  umbrella header "WanYiKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

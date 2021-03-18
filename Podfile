@@ -7,6 +7,7 @@ target 'FYP2.3' do
 
   # Pods for FYP2.3
 
- pod 'Snapkit'
+ pod 'SnapKit'
+ pod 'WanYiKit'
 
 end
