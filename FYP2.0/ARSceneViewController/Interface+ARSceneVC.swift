@@ -18,6 +18,22 @@ extension ARSceneViewController {
         sliderBarLink1.maximumValue = 0.5
         sliderBarLink1.isContinuous = false
         sliderBarLink1.setValue(10 * linkRadius, animated: true)
+
+        sliderBarLink2.minimumValue = 4 * linkRadius
+        sliderBarLink2.maximumValue = 0.5
+        sliderBarLink2.isContinuous = false
+        sliderBarLink2.setValue(10 * linkRadius, animated: true)
+
+        sliderBarLink3.minimumValue = 4 * linkRadius
+        sliderBarLink3.maximumValue = 0.5
+        sliderBarLink3.isContinuous = false
+        sliderBarLink3.setValue(10 * linkRadius, animated: true)
+
+        sliderBarLink4.minimumValue = 4 * linkRadius
+        sliderBarLink4.maximumValue = 0.5
+        sliderBarLink4.isContinuous = false
+        sliderBarLink4.setValue(10 * linkRadius, animated: true)
+
         
         
         driveAngleVelocity.minimumValue = 16
@@ -43,6 +59,20 @@ extension ARSceneViewController {
     
     @objc func tappedOnARSCNView() {
         
+        
+        guard fourBarInitialAngle != nil  && fourBarLinkLength != nil else {
+            return
+        }
+        
+        generateNewNode(mode: "FourBarLinkage")
+        
+
+    }
+    
+    
+    // can reset
+    @objc func pinchOnARSCNView() {
+        
         switch self.navigationController?.isNavigationBarHidden {
             case true:
                 self.navigationController?.isNavigationBarHidden = false
@@ -51,22 +81,7 @@ extension ARSceneViewController {
             default:
                 print("isNavigationBarHidden is nil")
         }
-    }
-    
-    
-    // can reset
-    @objc func pinchOnARSCNView() {
-        
-        fourBarInitialAngle![0] += pi/4
-        guard fourBarInitialAngle != nil  && fourBarLinkLength != nil else {
-            return
-        }
-        
-        removeAllNodes()
-        
-        currentNode = arView.scene.rootNode
-        addFourBarLink(to: arView, ofLength: fourBarLinkLength!, with: fourBarInitialAngle!)
-                                                      
+
     }
 
     

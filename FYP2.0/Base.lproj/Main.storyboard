@@ -43,6 +43,31 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="div-co-WQT">
+                                <rect key="frame" x="10" y="186" width="306" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0D1-gA-IKb">
+                                <rect key="frame" x="14" y="223" width="302" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6RS-0E-Woa">
+                                <rect key="frame" x="14" y="260" width="297" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOS-y8-EMl">
+                                <rect key="frame" x="184" y="422" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="popDownBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rwd-kY-Iq9"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1id-eh-JPF">
+                                <rect key="frame" x="87" y="552" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -67,11 +92,14 @@
                         <outlet property="driverLength" destination="JGb-Rb-buX" id="ToZ-5M-kbg"/>
                         <outlet property="driverVelocity" destination="2oO-lO-YJY" id="Xp7-0t-NDt"/>
                         <outlet property="sliderBarLink1" destination="asE-yi-is4" id="bfu-Y7-hoj"/>
+                        <outlet property="sliderBarLink2" destination="div-co-WQT" id="XlG-9p-la6"/>
+                        <outlet property="sliderBarLink3" destination="0D1-gA-IKb" id="fIV-N4-bi5"/>
+                        <outlet property="sliderBarLink4" destination="6RS-0E-Woa" id="xb4-KH-4fv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2251" y="-516"/>
+            <point key="canvasLocation" x="2249.2307692307691" y="-516.11374407582935"/>
         </scene>
         <!--Mode DescriptionVC-->
         <scene sceneID="gxV-e8-qMn">

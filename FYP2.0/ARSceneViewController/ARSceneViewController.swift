@@ -13,9 +13,6 @@ import ARKit
 let pi:Float = 3.14
 var indicatorOfNode = 1
 
-
-
-
 class ARSceneViewController: UIViewController {
 
     var fourBarLinkLength:[Float]?
@@ -36,17 +33,27 @@ class ARSceneViewController: UIViewController {
     
     
     
-    var directionFlag:Bool = true
+    var directionFlag:Bool = false
     var timer:Timer?
     
     @IBOutlet weak var arView: ARSCNView!
     @IBOutlet weak var sliderBarLink1: UISlider!
     @IBOutlet weak var driveAngleVelocity: UISlider!
     
+    @IBOutlet weak var sliderBarLink2: UISlider!
+    @IBOutlet weak var sliderBarLink3: UISlider!
+    @IBOutlet weak var sliderBarLink4: UISlider!
+    
+    
     @IBOutlet weak var driverLength: UITextField!
     @IBOutlet weak var driverVelocity: UITextField!
     
     
+    @IBAction func popDownBtn(_ sender: Any) {
+        
+        
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,9 +78,8 @@ class ARSceneViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
-        tapTimer()
         
+        tapTimer()
         // Prevent the screen from being dimmed to avoid interuppting the AR experience.
         UIApplication.shared.isIdleTimerDisabled = true
 
@@ -130,22 +136,16 @@ extension ARSceneViewController {
     
     func fourBarLinkParametersSetUp() {
         
-        self.fourBarLinkLength = Array(repeating: sliderBarLink1.value, count: 4)
-        self.fourBarInitialAngle = [0, -pi/2, -pi/2, -pi/2]
+//        self.fourBarLinkLength = Array(repeating: sliderBarLink1.value, count: 4)
+        self.fourBarLinkLength = [0.18, 0.18, 0.18, 0.18]
+        self.fourBarInitialAngle = [-pi/2, 0, -pi, 0]
+        
 //        self.fourBarInitialAngle = initialPositionCaculate(fourBarLinkLength: self.fourBarLinkLength!)
         
-        self.fourBarRotationAngle = [0 , 0, 0, 0]
+        self.fourBarRotationAngle = [0, 0, 0, 0]
         self.currentNode = arView.scene.rootNode
         
+        addFourBarLink(to: arView, ofLength: self.fourBarLinkLength! , with: self.fourBarInitialAngle! )
+        
     }
-    
 }
-
-
-
-
-
-
-
-
-
