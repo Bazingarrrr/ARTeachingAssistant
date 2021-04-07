@@ -48,10 +48,21 @@ class ARSceneViewController: UIViewController {
     @IBOutlet weak var driverLength: UITextField!
     @IBOutlet weak var driverVelocity: UITextField!
     
+    @IBOutlet weak var popDownView: UIView!
+    var popBtnStatus:Bool = false
     
     @IBAction func popDownBtn(_ sender: Any) {
         
-        
+        switch popBtnStatus {
+        case false:
+            popDownView.alpha = 0.7
+            popBtnStatus = true
+            break
+        default:
+            popDownView.alpha = 0
+            popBtnStatus = false
+            break
+        }
         
     }
     
@@ -64,6 +75,7 @@ class ARSceneViewController: UIViewController {
         GestureSetUp()
         determineTypeOfFourBar(fourBarLinkLength: fourBarLinkLength!)
         
+        popDownView.alpha = 0
         
     }
     
