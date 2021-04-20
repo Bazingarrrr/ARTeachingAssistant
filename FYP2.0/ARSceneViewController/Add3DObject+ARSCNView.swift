@@ -45,12 +45,13 @@ func addLine(to sceneView:ARSCNView, at translation:SCNVector3, with orientation
 func addSphere(to sceneView:ARSCNView, at translation:SCNVector3, with rotation:SCNVector4 = SCNVector4(0,0,0,0), eularAngle eularRotation:SCNVector3?, radius:CGFloat = -1  ) {
 
 var radius = radius
+    
 let rotationAngle:Float = rotation.w
 if radius == -1 {  radius = CGFloat(2*self.linkRadius) }
 
 // 关于 Z轴 的旋转矩阵
-let Tx = SCNMatrix4(m11: cos(rotationAngle), m12: sin(rotationAngle), m13: 0.0, m14: 0.0,
-                    m21: -sin(rotationAngle), m22: cos(rotationAngle), m23: 0.0, m24: 0.0,
+    let Tx = SCNMatrix4(m11: cos(rotationAngle), m12: sin(rotationAngle), m13: 0.0, m14: 0.0,
+                        m21: -sin(rotationAngle), m22: cos(rotationAngle), m23: 0.0, m24: 0.0,
                     m31: 0.0, m32: 0.0, m33: 1.0, m34: 0.0,
                     m41: translation.x, m42: translation.y, m43: translation.z, m44: 1.0)
 

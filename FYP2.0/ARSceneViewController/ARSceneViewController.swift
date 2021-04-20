@@ -51,6 +51,9 @@ class ARSceneViewController: UIViewController {
     @IBOutlet weak var popDownView: UIView!
     var popBtnStatus:Bool = false
     
+    
+    @IBOutlet weak var horizontalView: UIStackView!
+    
     @IBAction func popDownBtn(_ sender: Any) {
         
         switch popBtnStatus {
@@ -64,6 +67,17 @@ class ARSceneViewController: UIViewController {
             break
         }
         
+        let velocityChartView = VelocityChartViewController()
+        velocityChartView.viewDidLoad()
+        guard let view = velocityChartView.view else{
+            return
+        }
+        let view2 = velocityChartView.view!
+        horizontalView.addSubview(view)
+        horizontalView.addSubview(view2)
+//        horizontalView.addSubview(view)
+//        view.bottomAnchor.constraint(equalTo: popDownView.bottomAnchor).isActive = true
+//        view.heightAnchor.constraint(equalToConstant: popDownView.frame.height - 10).isActive = true
     }
     
     override func viewDidLoad() {
@@ -132,7 +146,7 @@ class ARSceneViewController: UIViewController {
     }
     
     
-} // end ViewController
+} // end ViewControllemeishi
 
 
 // MARK: - Other Set Up Methods

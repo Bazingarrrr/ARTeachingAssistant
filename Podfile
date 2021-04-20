@@ -9,5 +9,6 @@ target 'FYP2.3' do
 
  pod 'SnapKit'
  pod 'WanYiKit'
+ pod 'Charts'
 
 end

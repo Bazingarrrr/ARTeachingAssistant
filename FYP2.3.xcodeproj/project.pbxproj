@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9144D2BA2588E4BA00A32DCD /* Add3DObject+ARSCNView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9144D2B92588E4BA00A32DCD /* Add3DObject+ARSCNView.swift */; };
 		9144D2BD2588E56300A32DCD /* SliderCrank+ARSCNView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9144D2BC2588E56300A32DCD /* SliderCrank+ARSCNView.swift */; };
+		916636CA261E27320010AB8B /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916636C9261E27320010AB8B /* LineChart.swift */; };
 		9179766125A89D0F00C09AE7 /* ModeDescriptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179766025A89D0F00C09AE7 /* ModeDescriptionVC.swift */; };
 		9180D7642567933200D3F16D /* Interface+ARSceneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180D7632567933200D3F16D /* Interface+ARSceneVC.swift */; };
 		9180D7672567AFDF00D3F16D /* Superimposition+ARSCeneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180D7662567AFDF00D3F16D /* Superimposition+ARSCeneVC.swift */; };
@@ -31,6 +32,7 @@
 		874D4517C7596AC1632F1B77 /* Pods_FYP2_3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FYP2_3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9144D2B92588E4BA00A32DCD /* Add3DObject+ARSCNView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Add3DObject+ARSCNView.swift"; sourceTree = "<group>"; };
 		9144D2BC2588E56300A32DCD /* SliderCrank+ARSCNView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SliderCrank+ARSCNView.swift"; sourceTree = "<group>"; };
+		916636C9261E27320010AB8B /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
 		9179764825A1A99700C09AE7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9179766025A89D0F00C09AE7 /* ModeDescriptionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeDescriptionVC.swift; sourceTree = "<group>"; };
 		9180D7632567933200D3F16D /* Interface+ARSceneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Interface+ARSceneVC.swift"; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		91FDE27A25E3622C00EC0F81 /* ARSceneViewController */ = {
 			isa = PBXGroup;
 			children = (
+				916636C9261E27320010AB8B /* LineChart.swift */,
 				918D595F25636A91005E84A6 /* ARSceneViewController.swift */,
 				9144D2B92588E4BA00A32DCD /* Add3DObject+ARSCNView.swift */,
 				9144D2BC2588E56300A32DCD /* SliderCrank+ARSCNView.swift */,
@@ -247,6 +250,7 @@
 				9180D7642567933200D3F16D /* Interface+ARSceneVC.swift in Sources */,
 				9144D2BD2588E56300A32DCD /* SliderCrank+ARSCNView.swift in Sources */,
 				9180D7672567AFDF00D3F16D /* Superimposition+ARSCeneVC.swift in Sources */,
+				916636CA261E27320010AB8B /* LineChart.swift in Sources */,
 				9640725C25A83970006BDD31 /* ModeCell.swift in Sources */,
 				9640725825A83671006BDD31 /* ModeSelectionVC.swift in Sources */,
 				918D596025636A91005E84A6 /* ARSceneViewController.swift in Sources */,

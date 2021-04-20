@@ -1,20 +1,26 @@
 PODS:
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
   - SnapKit (5.0.1)
   - WanYiKit (0.0.5)
 
 DEPENDENCIES:
+  - Charts
   - SnapKit
   - WanYiKit
 
 SPEC REPOS:
   trunk:
+    - Charts
     - SnapKit
     - WanYiKit
 
 SPEC CHECKSUMS:
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   WanYiKit: 427ae276bbbfdc643f3f6c04d1f72c81626c7063
 
-PODFILE CHECKSUM: 6a838a929b80a5794e8cf1340aefea0790045d87
+PODFILE CHECKSUM: 0ee3f5e5dcda03203bbf3cc910f4f2c3cdc7b5b8
 
 COCOAPODS: 1.9.3

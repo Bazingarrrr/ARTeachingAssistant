@@ -71,7 +71,14 @@ extension ARSceneViewController {
         let L3 = L[2]
         let L4 = L[3]
         
-        let driveRotationAngle = driveRotationAngle + initialAngle[0]
+        var inverseFactor:Float = 1
+        var driveRotationAngle = driveRotationAngle.truncatingRemainder(dividingBy: 2*pi)
+        if driveRotationAngle >= pi { inverseFactor = -1 }
+        else { inverseFactor = 1 }
+        
+        
+        
+        driveRotationAngle = driveRotationAngle + initialAngle[0]
         var fourBarLinkRotationAngle = [Float]()
               
         let type = determineTypeOfFourBar(fourBarLinkLength: fourBarLinkLength)
@@ -81,16 +88,16 @@ extension ARSceneViewController {
             let t1 = pi/2 - driveRotationAngle
             let k1 = sqrt( L1*L1 + L4*L4 - 2*L1*L4*cos(t1) )
             let t2 = acos( (L1*L1 + k1*k1 - L4*L4 )/( 2*L1*k1 ) )
-            print(t2)
             let t3 = acos( (L2*L2 + k1*k1 - L3*L3)/( 2*L2*k1 ) )
-            print(t3)
             let theta2 = pi - t2 - t3
             let t4 = acos( (L2*L2 + L3*L3 - k1*k1)/(2*L2*L3) )
             let theta3 = pi-t4
             let theta4 = 3*pi/2 - driveRotationAngle - theta2 - theta3
+                        
+            fourBarLinkRotationAngle += [driveRotationAngle - initialAngle[0], theta2 - initialAngle[1], theta3-initialAngle[2], inverseFactor * (theta4-initialAngle[3]) ]
+
             
-            fourBarLinkRotationAngle += [driveRotationAngle - initialAngle[0], theta2 - initialAngle[1], theta3-initialAngle[2], theta4-initialAngle[3]]
-            print(fourBarLinkRotationAngle)
+            print(driveRotationAngle)
         }
         
         // TODO: 一套模型是不适用于所有长度的四连杆的， 要针对不同类型的四连杆，建立不同的运动学模型。
@@ -263,7 +270,6 @@ extension ARSceneViewController {
                 if forthJoint != nil {
                     self.fourBarLinkLength![2] = sqrt( pow( ( (thirdJoint?.position.x)! - (forthJoint?.position.x)! ),2) - pow(((thirdJoint?.position.y)! - (forthJoint?.position.y)!), 2)   )
                     self.fourBarLinkLength![3] = sqrt( pow( ( (forthJoint?.position.x)! - (firstJoint?.position.x)! ),2) - pow(((forthJoint?.position.y)! - (firstJoint?.position.y)!), 2)   )
-                    print(self.fourBarLinkLength)
                 }
             }
         }
@@ -272,17 +278,17 @@ extension ARSceneViewController {
         // 逆时针转 or 顺时针转
         switch directionFlag {
         case false:
-            dtheta = pi/90
+            dtheta = 5*pi/90
             break;
         default:
-            dtheta = -pi/90
+            dtheta = -5*pi/90
         }
         fourBarRotationAngle![0] += dtheta
         
         func fourBar(){
             
-            if fourBarRotationAngle![0] >= pi-pi/90 {  directionFlag = true }
-            if fourBarRotationAngle![0] <= 0 + pi/90 {   directionFlag = false    }
+//            if fourBarRotationAngle![0] >= pi-pi/90 {  directionFlag = true }
+//            if fourBarRotationAngle![0] <= 0 + pi/90 {   directionFlag = false    }
             
             fourBarRotationAngle = inverseKinematics(fourBarLinkLength: fourBarLinkLength!, driveRotationAngle: fourBarRotationAngle![0], initialAngle: fourBarInitialAngle!)
             
@@ -340,7 +346,7 @@ extension ARSceneViewController {
     func tapTimer() -> Void {
         
         self.timer = Timer.scheduledTimer(withTimeInterval: TimeInterval(1/self.driveAngleVelocity.value), repeats: true) { (Timer) in
-            self.generateNewNode(mode: self.mode)
+//            self.generateNewNode(mode: self.mode)
         }
         
     }

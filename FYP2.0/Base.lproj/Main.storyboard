@@ -26,59 +26,64 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Velocity" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2oO-lO-YJY">
-                                <rect key="frame" x="317" y="106" width="68" height="34"/>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1id-eh-JPF">
+                                <rect key="frame" x="10" y="411" width="374" height="378"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOS-y8-EMl">
-                                <rect key="frame" x="184" y="422" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="div-co-WQT">
+                                        <rect key="frame" x="4" y="269" width="306" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0D1-gA-IKb">
+                                        <rect key="frame" x="3" y="304" width="302" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6RS-0E-Woa">
+                                        <rect key="frame" x="6" y="341" width="297" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="asE-yi-is4">
+                                        <rect key="frame" x="6" y="231" width="308" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="n2C-fE-PoZ">
+                                        <rect key="frame" x="3" y="174" width="308" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="thumbTintColor" systemColor="systemTealColor"/>
+                                        <connections>
+                                            <action selector="changeVelocity:" destination="BYZ-38-t0r" eventType="valueChanged" id="LK9-gT-hkV"/>
+                                        </connections>
+                                    </slider>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=" " borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2oO-lO-YJY">
+                                        <rect key="frame" x="320" y="217" width="68" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bkl-BU-OmP">
+                                        <rect key="frame" x="8" y="19" width="358" height="139"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOS-y8-EMl">
+                                <rect key="frame" x="329" y="793" width="65" height="34"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                <state key="normal" title="Length"/>
                                 <connections>
                                     <action selector="popDownBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rwd-kY-Iq9"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1id-eh-JPF">
-                                <rect key="frame" x="20" y="496" width="374" height="212"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="div-co-WQT">
-                                        <rect key="frame" x="6" y="139" width="306" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0D1-gA-IKb">
-                                        <rect key="frame" x="6" y="12" width="302" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6RS-0E-Woa">
-                                        <rect key="frame" x="6" y="92" width="297" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="asE-yi-is4">
-                                        <rect key="frame" x="-5" y="54" width="308" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </slider>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="n2C-fE-PoZ">
-                                <rect key="frame" x="8" y="148" width="308" height="31"/>
-                                <color key="thumbTintColor" systemColor="systemTealColor"/>
-                                <connections>
-                                    <action selector="changeVelocity:" destination="BYZ-38-t0r" eventType="valueChanged" id="LK9-gT-hkV"/>
-                                </connections>
-                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="j0S-Xe-XxS" secondAttribute="trailing" id="270-bA-acD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n2C-fE-PoZ" secondAttribute="trailing" constant="100" id="IKX-lI-zct"/>
-                            <constraint firstItem="n2C-fE-PoZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="VwV-os-0Y3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uOS-y8-EMl" secondAttribute="bottom" constant="35" id="6eZ-4S-sBd"/>
                             <constraint firstItem="j0S-Xe-XxS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gY1-1o-iqu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uOS-y8-EMl" secondAttribute="trailing" constant="20" id="i6t-hf-ngM"/>
                             <constraint firstItem="j0S-Xe-XxS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="n83-Vf-x5Z"/>
                             <constraint firstAttribute="bottom" secondItem="j0S-Xe-XxS" secondAttribute="bottom" id="pgS-Ln-NTy"/>
                         </constraints>
@@ -90,6 +95,7 @@
                         <outlet property="driveAngleVelocity" destination="n2C-fE-PoZ" id="ScL-XK-ccu"/>
                         <outlet property="driverLength" destination="JGb-Rb-buX" id="ToZ-5M-kbg"/>
                         <outlet property="driverVelocity" destination="2oO-lO-YJY" id="Xp7-0t-NDt"/>
+                        <outlet property="horizontalView" destination="bkl-BU-OmP" id="dVD-Uc-Bq3"/>
                         <outlet property="popDownView" destination="1id-eh-JPF" id="cQD-aa-YRE"/>
                         <outlet property="sliderBarLink1" destination="asE-yi-is4" id="bfu-Y7-hoj"/>
                         <outlet property="sliderBarLink2" destination="div-co-WQT" id="XlG-9p-la6"/>
@@ -154,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MbQ-BI-kpt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1480" y="-516"/>
+            <point key="canvasLocation" x="1352" y="-516"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BGO-Vc-oHN">
